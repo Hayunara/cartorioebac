@@ -140,6 +140,7 @@ int main()//os parenteses é pq é uma função
 		printf("\t1 - Registrar nomes\n"); // o "\t" da espaço (margem)
 		printf("\t2 - Consultar nomes\n");
 		printf("\t3 - Deletar nomes\n\n\n");
+		printf("\t4 - Sair do sistema\n\n");
 		printf("Opção: ");//fim do menu
 	
 		scanf("%d", &opcao); //para guardar a resposta do usuario
@@ -158,6 +159,11 @@ int main()//os parenteses é pq é uma função
 			
 			case 3:
 			deletar();
+			break;
+			
+			case 4:
+			printf("Obrigado por utilizar o sistema!\n");
+			return 0;
 			break;
 			
 			default://usar default quando for fora do padrão (case)
